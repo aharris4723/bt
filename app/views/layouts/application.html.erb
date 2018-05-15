@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bt</title>
+    <title>Tribe</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,18 @@
   </head>
 
   <body>
+  	 
+<h1>BLACK THOUGHT</h1>
+
+  	 <ul class="navbar">
+        <!-- <li><a href='/comments'>New comment</a></li> --> 
+        <!-- <li><a href='/events'>Events</a></li> -->
+           <!-- <li><a href='/events/list'>all events</a></li> -->
+        <li class=><%= link_to "Log In", '/'%></li>
+        <li class=><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+        <li class=><%= link_to "Settings",  edit_user_registration_path %></li>
+       
+      </ul>
     <%= yield %>
   </body>
 </html>

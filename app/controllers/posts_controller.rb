@@ -6,6 +6,7 @@ class PostsController < ApplicationController
   def index
     @posts = Post.all
     @comments = Comment.all
+    @post = Post.new
   end
 
   # GET /posts/1

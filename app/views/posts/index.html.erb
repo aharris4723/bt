@@ -1,13 +1,18 @@
 <div id="post-wrapper">
 
-  <h1>post index</h1>
-    <% @posts.each do |c| %>
-    <div id="posts"><p><a href='/posts/<%= c.id %>'><%= c.title %></a></p></div>
-        <% end %>
+  <h1 id='post-title'>post index</h1>
+   
+  <div id='post-form-wraper'>
     <%= form_for @post do |f| %>
   
    <div>Title:<%= f.text_field :title %></div><br>
    <div>Post: <%= f.text_area :content %></div><br>
 	<%= f.submit %>
     <% end %>
+  </div>
+  <div id="post">
+   <% @posts.each do |c| %>
+    <div id="posts"><p><a href='/posts/<%= c.id %>'><%= c.title %></a></p></div>
+        <% end %>
+   </div>
 </div>

@@ -1,15 +1,23 @@
-
-
 #post-wrapper{
     height:100%;
 	width: 70%;
     min-height: 5000PX;
-	border-right: 2px solid grey;
-	border-left: 2px solid grey;
+    border-image: url('gold3.png');
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+	border-image-slice: 10;
 	/*background-image: url('melting.jpg');
 	background-size: 100%;
     background-repeat: repeat;
     background-position: cover;*/
 	margin-left: 15vmax;
 	background-color:white;
+	padding: 15px;
+}
+#post-form-wraper{
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+#post-title{
+	text-align: center;
 }

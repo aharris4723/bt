@@ -1,0 +1,46 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+
+}
+#black-title{
+	text-align: center;
+	font-size: 80px;
+	font-family: 'Abril Fatface', cursive;
+	box-shadow: 5px 5px 5px 5px blue;
+	text-shadow: 2px 2px white;
+	/*background-image: url('black-flag.png');*/
+	background-size: 100% 100% ;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 20px;
+	background-color: tan;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}

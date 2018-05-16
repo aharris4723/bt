@@ -1,11 +1,11 @@
 <h1>post index</h1>
-<%@posts.each do |e|%>
-<div><%= e.title %></div>
-<% end %>
-
+<% @posts.each do |c| %>
+    <div id="posts"><p><a href='/posts/<%= c.id %>'><%= c.title %></a></p></div>
+        <% end %>
 <%= form_for @post do |f| %>
   
 <div>Title:<%= f.text_field :title %></div><br>
 <div>Post: <%= f.text_area :content %></div><br>
 	<%= f.submit %>
 <% end %>
+

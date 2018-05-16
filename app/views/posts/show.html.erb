@@ -1,1 +1,32 @@
 <h1>postshow</h1>
+<div id="gatherings"><p><%= @post.title %></p>
+<div id="gatherings"><p><%= @post.content %></p>
+
+	<%= form_with(model: @comment, local: true) do |c| %>
+    
+    <div><%=c.text_area :body%></div>
+     <div><%= c.hidden_field :post_id, :value => @post.id %></div>
+   
+    <div><%=c.submit %></div>
+
+    <% end %>
+</div>
+</div>
+
+
+<% @comments.each do |c| %>
+
+    <div id="username"><%= @user.email %>:said</div>
+    <div id="comments"><p><a href='/comments/<%= c.id %>'><%= c.body %></a></p>
+    	
+    	<div><%= link_to 'Delete', "/comments/#{c.id}", method: :delete %></div>
+    
+
+    
+
+
+
+<%end%>	
+
+
+</div>

@@ -1,18 +1,20 @@
 <div id="post-wrapper">
 
-  <h1 id='post-title'>post index</h1>
+  
    
   <div id='post-form-wraper'>
+  	<h2>Post a new topic</h2>
     <%= form_for @post do |f| %>
   
-   <div>Title:<%= f.text_field :title %></div><br>
-   <div>Post: <%= f.text_area :content %></div><br>
+   <div><%= f.text_field :title, placeholder: 'Title',  class: 'form', style: 'min-width: 30%;' %></div><br>
+   <div><%= f.text_area :content, placeholder: 'Body', class: 'form', style: 'min-width: 30%; max-width: 30%;  min-height:200px; max-height:400px; border-size: 4px solid back;' %></div><br>
 	<%= f.submit %>
     <% end %>
   </div>
   <div id="post">
-   <% @posts.each do |c| %>
-    <div id="posts"><p><a href='/posts/<%= c.id %>'><%= c.title %></a></p></div>
+    <h1 id='post-title'>TOPICS</h1>
+      <% @posts.each do |c| %>
+      <div id="posts"><p><a href='/posts/<%= c.id %>'><%= c.title %></a></p></div>
         <% end %>
-   </div>
+  </div>
 </div>

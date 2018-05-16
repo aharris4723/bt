@@ -15,9 +15,27 @@
 	padding: 15px;
 }
 #post-form-wraper{
-	border-top: 2px solid black;
-	border-bottom: 2px solid black;
+	border: 2px solid black;
+	text-align: center;
+	
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	color: red;
+	background-color: black;
 }
 #post-title{
 	text-align: center;
+}
+#post{
+	border-top:2px solid black;
+	border-bottom:2px solid black;
+	text-align: center;
+	background-color: tan;
+}
+.form{
+	border-radius: 2%;
+	column-width: 70px;
+	border-color: black;
+	background-color: white;
 }

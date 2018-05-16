@@ -1,3 +1,15 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#post-wrapper{
+    height:100%;
+	width: 70%;
+    min-height: 5000PX;
+	border-right: 2px solid grey;
+	border-left: 2px solid grey;
+	/*background-image: url('melting.jpg');
+	background-size: 100%;
+    background-repeat: repeat;
+    background-position: cover;*/
+	margin-left: 15vmax;
+	background-color:white;
+}

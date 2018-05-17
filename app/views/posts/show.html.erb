@@ -1,6 +1,6 @@
 <h1>postshow</h1>
-<div id="gatherings"><p><%= @post.title %></p>
-<div id="gatherings"><p><%= @post.content %></p>
+<div id="post-form-wraper"><p><%= @post.title %></p>
+<div id="post-form-wraper"><p><%= @post.content %></p>
 
 	<%= form_with(model: @comment, local: true) do |c| %>
     

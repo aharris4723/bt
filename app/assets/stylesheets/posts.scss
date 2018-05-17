@@ -6,22 +6,23 @@
 	border-right: 5px solid transparent;
 	border-left: 5px solid transparent;
 	border-image-slice: 10;
-	/*background-image: url('melting.jpg');
+	/*background-image: url('post-back.jpg');*/
 	background-size: 100%;
     background-repeat: repeat;
-    background-position: cover;*/
+    background-position: cover;
 	margin-left: 15vmax;
-	background-color:white;
-	padding: 15px;
+	background-color:black;
+	/*padding: 15px;*/
 }
 #post-form-wraper{
 	border: 2px solid black;
 	text-align: center;
-	
+	padding: 2px;
+	background-image: url('post-box.png');
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 100%;
-	color: red;
+	background-size: 100% 100%;
+	color: black;
 	background-color: black;
 }
 #post-title{
@@ -29,9 +30,10 @@
 }
 #post{
 	border-top:2px solid black;
-	border-bottom:2px solid black;
+	/*border-bottom:2px solid black;*/
 	text-align: center;
-	background-color: tan;
+	background-color: black;
+	/*background-image: url('post-back.jpg');*/
 }
 .form{
 	border-radius: 2%;
